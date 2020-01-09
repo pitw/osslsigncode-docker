@@ -8,7 +8,7 @@ Run in interactive mode with your source root bound to `/work`; specify your
 setup script as the command:
 
 ```sh
-docker run --rm -i -v $(pwd):/work omegatorg/osslsigncode ARGS
+docker run --rm -i -v $(pwd):/work pitwch/osslsigncode-docker ARGS
 ```
 
 Put the following wrapper script in your PATH as e.g. `osslsigncode` to be able
@@ -17,7 +17,7 @@ to run just `osslsigncode ARGS`:
 ```sh
 #!/usr/bin/env bash
 
-exec docker run --rm -i -v $(pwd):/work omegatorg/osslsigncode "$@"
+exec docker run --rm -i -v $(pwd):/work pitwch/osslsigncode-docker "$@"
 ```
 
 ## Important notes
