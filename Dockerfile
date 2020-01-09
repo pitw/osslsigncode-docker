@@ -1,10 +1,10 @@
 FROM ubuntu:18.04
 MAINTAINER Simon Pedrett <admin@pitw.ch>
 
-RUN sudo apt-get update \
+RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     osslsigncode \
-    && rm -rf /var/lib/apt/lists/*
+    && apt-get clean
 
 WORKDIR /work
 USER nobody
