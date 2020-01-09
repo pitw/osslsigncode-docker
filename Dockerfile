@@ -4,6 +4,7 @@ MAINTAINER Simon Pedrett <admin@pitw.ch>
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     osslsigncode \
+    git \
     && apt-get clean
 
 WORKDIR /work
