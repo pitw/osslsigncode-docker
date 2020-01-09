@@ -7,5 +7,4 @@ RUN apt-get update \
     && apt-get clean
 
 WORKDIR /work
-USER nobody
 ENTRYPOINT ["osslsigncode"]
