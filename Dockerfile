@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
-MAINTAINER Aaron Madlon-Kay <aaron@madlon-kay.com>
+MAINTAINER Simon Pedrett <admin@pitw.ch>
 
-RUN apt-get update \
+RUN sudo apt-get update \
     && apt-get install -y --no-install-recommends \
     osslsigncode \
     && rm -rf /var/lib/apt/lists/*
